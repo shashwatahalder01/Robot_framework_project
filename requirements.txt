@@ -1,0 +1,6 @@
+
+robotframework==4.0.2
+robotframework-seleniumlibrary==5.1.3
+webdrivermanager==0.10.0
+robotframework-autorecorder==0.1.0
+robotframework-tidy==1.1.1
