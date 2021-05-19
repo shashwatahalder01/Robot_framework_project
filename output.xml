@@ -1,91 +1,489 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.2 (Python 3.8.5 on linux)" generated="20210518 22:36:04.318" rpa="false" schemaversion="2">
-<suite id="s1" name="Alex Test" source="/home/projects/Sh-qups/Robot_framework_project/TestCases/alex_test.robot">
-<test id="s1-t1" name="Test Homepage">
-<kw name="Open Browser To Home Page">
+<robot generator="Robot 4.0.2 (Python 3.8.5 on linux)" generated="20210519 18:48:06.556" rpa="false" schemaversion="2">
+<suite id="s1" name="A" source="/home/projects/Sh-qups/Robot_framework_project/TestCases/a.robot">
+<kw name="Open Browser To Home Page" library="resource_alex" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${HOMEPAGE URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210518 22:36:04.429" level="INFO">Opening browser 'Chrome' to base url 'https://alexsolutions.com.au/'.</msg>
-<status status="PASS" starttime="20210518 22:36:04.429" endtime="20210518 22:36:08.425"/>
+<msg timestamp="20210519 18:48:13.323" level="INFO">Opening browser 'Chrome' to base url 'https://alexsolutions.com.au/'.</msg>
+<status status="PASS" starttime="20210519 18:48:13.321" endtime="20210519 18:48:19.539"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210518 22:36:08.425" endtime="20210518 22:36:08.531"/>
+<status status="PASS" starttime="20210519 18:48:19.539" endtime="20210519 18:48:19.644"/>
 </kw>
-<status status="PASS" starttime="20210518 22:36:04.429" endtime="20210518 22:36:08.531"/>
+<status status="PASS" starttime="20210519 18:48:13.319" endtime="20210519 18:48:19.644"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210518 22:36:13.532" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210518 22:36:08.531" endtime="20210518 22:36:13.533"/>
-</kw>
-<kw name="Goo To Product">
-<kw name="Click Link" library="SeleniumLibrary">
+<test id="s1-t1" name="Test Augmented Data Catalog LINK">
+<kw name="Test AUGMENTED LINK" library="resource_alex">
+<kw name="Go To Link" library="resource_alex">
 <arg>${PRODUCT LINK}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210518 22:36:13.536" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
-<status status="PASS" starttime="20210518 22:36:13.535" endtime="20210518 22:36:13.642"/>
-</kw>
-<status status="PASS" starttime="20210518 22:36:13.533" endtime="20210518 22:36:13.642"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210518 22:36:18.643" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210518 22:36:13.642" endtime="20210518 22:36:18.643"/>
-</kw>
-<kw name="Goo To Augmented Data Link">
 <kw name="Click Link" library="SeleniumLibrary">
-<arg>${AUGMENTED LINK}</arg>
+<arg>${LINK}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20210518 22:36:18.646" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/augmented-data-catalog/"]'.</msg>
-<status status="PASS" starttime="20210518 22:36:18.645" endtime="20210518 22:36:18.716"/>
+<msg timestamp="20210519 18:48:19.646" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
+<status status="PASS" starttime="20210519 18:48:19.646" endtime="20210519 18:48:20.233"/>
 </kw>
-<status status="PASS" starttime="20210518 22:36:18.644" endtime="20210518 22:36:18.716"/>
+<status status="PASS" starttime="20210519 18:48:19.645" endtime="20210519 18:48:20.233"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210518 22:36:23.717" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210518 22:36:18.716" endtime="20210518 22:36:23.718"/>
+<msg timestamp="20210519 18:48:25.234" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:20.234" endtime="20210519 18:48:25.235"/>
 </kw>
-<kw name="Take text">
-<kw name="Get Text" library="SeleniumLibrary">
-<arg>${AUGMENTED TEXT}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20210518 22:36:23.720" endtime="20210518 22:36:23.751"/>
+<kw name="Go To Link" library="resource_alex">
+<arg>${AUGMENTED LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:48:25.236" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/augmented-data-catalog/"]'.</msg>
+<status status="PASS" starttime="20210519 18:48:25.236" endtime="20210519 18:48:25.302"/>
 </kw>
-<status status="PASS" starttime="20210518 22:36:23.719" endtime="20210518 22:36:23.751"/>
+<status status="PASS" starttime="20210519 18:48:25.235" endtime="20210519 18:48:25.302"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210518 22:36:25.752" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210518 22:36:23.751" endtime="20210518 22:36:25.752"/>
+<msg timestamp="20210519 18:48:30.305" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:25.302" endtime="20210519 18:48:30.305"/>
 </kw>
+<kw name="Get String" library="resource_alex">
+<var>${STRING}</var>
+<arg>${AUGMENTED TEXT}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>${ELEMENT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210519 18:48:30.328" level="INFO">${TEXT} = Alex Augmented Data Catalog is powered by the industry’s best machine learning.</msg>
+<status status="PASS" starttime="20210519 18:48:30.306" endtime="20210519 18:48:30.328"/>
+</kw>
+<msg timestamp="20210519 18:48:30.328" level="INFO">${STRING} = Alex Augmented Data Catalog is powered by the industry’s best machine learning.</msg>
+<status status="PASS" starttime="20210519 18:48:30.305" endtime="20210519 18:48:30.328"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:48:35.329" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:30.328" endtime="20210519 18:48:35.329"/>
+</kw>
+<kw name="Assert Text" library="resource_alex">
+<arg>${AUGMENTED EXPECTED TEXT}</arg>
+<arg>${STRING}</arg>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${TEXT1}</arg>
+<arg>${TEXT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210519 18:48:35.330" endtime="20210519 18:48:35.331"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:35.329" endtime="20210519 18:48:35.331"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:48:40.332" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:35.331" endtime="20210519 18:48:40.332"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:19.645" endtime="20210519 18:48:40.332"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:19.644" endtime="20210519 18:48:40.333"/>
+</test>
+<test id="s1-t2" name="Test Automated Data link">
+<kw name="Test AUTOMATED LINK" library="resource_alex">
+<kw name="Go To Link" library="resource_alex">
+<arg>${PRODUCT LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:48:40.335" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
+<status status="PASS" starttime="20210519 18:48:40.335" endtime="20210519 18:48:40.385"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:40.334" endtime="20210519 18:48:40.385"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:48:45.386" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:40.385" endtime="20210519 18:48:45.386"/>
+</kw>
+<kw name="Go To Link" library="resource_alex">
+<arg>${AUTOMATED LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:48:45.388" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/data-lineage/"]'.</msg>
+<status status="PASS" starttime="20210519 18:48:45.387" endtime="20210519 18:48:45.444"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:45.387" endtime="20210519 18:48:45.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:48:50.446" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:45.445" endtime="20210519 18:48:50.446"/>
+</kw>
+<kw name="Get String" library="resource_alex">
+<var>${STRING}</var>
+<arg>${AUTOMATED TEXT}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>${ELEMENT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210519 18:48:50.467" level="INFO">${TEXT} = Alex Data Lineage is the best in the business. Here’s why.</msg>
+<status status="PASS" starttime="20210519 18:48:50.447" endtime="20210519 18:48:50.467"/>
+</kw>
+<msg timestamp="20210519 18:48:50.468" level="INFO">${STRING} = Alex Data Lineage is the best in the business. Here’s why.</msg>
+<status status="PASS" starttime="20210519 18:48:50.446" endtime="20210519 18:48:50.468"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:48:55.468" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:50.468" endtime="20210519 18:48:55.468"/>
+</kw>
+<kw name="Assert Text" library="resource_alex">
+<arg>${AUTOMATED EXPECTED TEXT}</arg>
+<arg>${STRING}</arg>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${TEXT1}</arg>
+<arg>${TEXT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210519 18:48:55.469" endtime="20210519 18:48:55.470"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:55.469" endtime="20210519 18:48:55.470"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:00.470" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:48:55.470" endtime="20210519 18:49:00.470"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:40.334" endtime="20210519 18:49:00.471"/>
+</kw>
+<status status="PASS" starttime="20210519 18:48:40.333" endtime="20210519 18:49:00.471"/>
+</test>
+<test id="s1-t3" name="Test Intelligent Business Glossary LINK">
+<kw name="Test INTELLIGENT LINK" library="resource_alex">
+<kw name="Go To Link" library="resource_alex">
+<arg>${PRODUCT LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:00.473" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
+<status status="PASS" starttime="20210519 18:49:00.473" endtime="20210519 18:49:00.517"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:00.472" endtime="20210519 18:49:00.518"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:05.518" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:00.518" endtime="20210519 18:49:05.519"/>
+</kw>
+<kw name="Go To Link" library="resource_alex">
+<arg>${INTELLIGENT LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:05.520" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/business-glossary/"]'.</msg>
+<status status="PASS" starttime="20210519 18:49:05.520" endtime="20210519 18:49:05.568"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:05.519" endtime="20210519 18:49:05.568"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:10.569" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:05.568" endtime="20210519 18:49:10.569"/>
+</kw>
+<kw name="Get String" library="resource_alex">
+<var>${STRING}</var>
+<arg>${INTELLIGENT TEXT}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>${ELEMENT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:10.594" level="INFO">${TEXT} = Alex Intelligent Business Glossary’s beautiful UI and rich functionality is perfect for conducting global collaboration.</msg>
+<status status="PASS" starttime="20210519 18:49:10.570" endtime="20210519 18:49:10.594"/>
+</kw>
+<msg timestamp="20210519 18:49:10.594" level="INFO">${STRING} = Alex Intelligent Business Glossary’s beautiful UI and rich functionality is perfect for conducting global collaboration.</msg>
+<status status="PASS" starttime="20210519 18:49:10.570" endtime="20210519 18:49:10.594"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:15.595" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:10.594" endtime="20210519 18:49:15.595"/>
+</kw>
+<kw name="Assert Text" library="resource_alex">
+<arg>${INTELLIGENT EXPECTED TEXT}</arg>
+<arg>${STRING}</arg>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${TEXT1}</arg>
+<arg>${TEXT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210519 18:49:15.596" endtime="20210519 18:49:15.596"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:15.595" endtime="20210519 18:49:15.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:20.597" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:15.597" endtime="20210519 18:49:20.597"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:00.472" endtime="20210519 18:49:20.598"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:00.472" endtime="20210519 18:49:20.598"/>
+</test>
+<test id="s1-t4" name="Test Data Security link">
+<kw name="Test SECURITY LINK" library="resource_alex">
+<kw name="Go To Link" library="resource_alex">
+<arg>${PRODUCT LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:20.600" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
+<status status="PASS" starttime="20210519 18:49:20.599" endtime="20210519 18:49:20.661"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:20.599" endtime="20210519 18:49:20.662"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:25.663" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:20.662" endtime="20210519 18:49:25.663"/>
+</kw>
+<kw name="Go To Link" library="resource_alex">
+<arg>${SECURITY LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:25.664" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/data-security/"]'.</msg>
+<status status="PASS" starttime="20210519 18:49:25.664" endtime="20210519 18:49:25.727"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:25.663" endtime="20210519 18:49:25.728"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:30.728" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:25.728" endtime="20210519 18:49:30.729"/>
+</kw>
+<kw name="Get String" library="resource_alex">
+<var>${STRING}</var>
+<arg>${SECURITY TEXT}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>${ELEMENT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:30.752" level="INFO">${TEXT} = Accelerate Sensitive data discovery and compliance with Alex Data Security.</msg>
+<status status="PASS" starttime="20210519 18:49:30.730" endtime="20210519 18:49:30.752"/>
+</kw>
+<msg timestamp="20210519 18:49:30.752" level="INFO">${STRING} = Accelerate Sensitive data discovery and compliance with Alex Data Security.</msg>
+<status status="PASS" starttime="20210519 18:49:30.729" endtime="20210519 18:49:30.752"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:35.753" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:30.752" endtime="20210519 18:49:35.753"/>
+</kw>
+<kw name="Assert Text" library="resource_alex">
+<arg>${SECURITY EXPECTED TEXT}</arg>
+<arg>${STRING}</arg>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${TEXT1}</arg>
+<arg>${TEXT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210519 18:49:35.754" endtime="20210519 18:49:35.754"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:35.753" endtime="20210519 18:49:35.754"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:40.755" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:35.755" endtime="20210519 18:49:40.755"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:20.599" endtime="20210519 18:49:40.756"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:20.598" endtime="20210519 18:49:40.756"/>
+</test>
+<test id="s1-t5" name="Test Data Quality link">
+<kw name="Test QUALITY LINK" library="resource_alex">
+<kw name="Go To Link" library="resource_alex">
+<arg>${PRODUCT LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:40.759" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
+<status status="PASS" starttime="20210519 18:49:40.759" endtime="20210519 18:49:40.805"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:40.758" endtime="20210519 18:49:40.805"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:45.806" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:40.805" endtime="20210519 18:49:45.806"/>
+</kw>
+<kw name="Go To Link" library="resource_alex">
+<arg>${QUALITY LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:45.808" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/data-quality/"]'.</msg>
+<status status="PASS" starttime="20210519 18:49:45.808" endtime="20210519 18:49:45.869"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:45.807" endtime="20210519 18:49:45.869"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:50.870" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:45.869" endtime="20210519 18:49:50.870"/>
+</kw>
+<kw name="Get String" library="resource_alex">
+<var>${STRING}</var>
+<arg>${QUALITY TEXT}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>${ELEMENT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210519 18:49:50.893" level="INFO">${TEXT} = Your biggest decisions need the highest possible quality Data.</msg>
+<status status="PASS" starttime="20210519 18:49:50.871" endtime="20210519 18:49:50.893"/>
+</kw>
+<msg timestamp="20210519 18:49:50.894" level="INFO">${STRING} = Your biggest decisions need the highest possible quality Data.</msg>
+<status status="PASS" starttime="20210519 18:49:50.870" endtime="20210519 18:49:50.894"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:49:55.894" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:50.894" endtime="20210519 18:49:55.895"/>
+</kw>
+<kw name="Assert Text" library="resource_alex">
+<arg>${QUALITY EXPECTED TEXT}</arg>
+<arg>${STRING}</arg>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${TEXT1}</arg>
+<arg>${TEXT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210519 18:49:55.896" endtime="20210519 18:49:55.896"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:55.895" endtime="20210519 18:49:55.896"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:50:00.897" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:49:55.896" endtime="20210519 18:50:00.897"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:40.758" endtime="20210519 18:50:00.897"/>
+</kw>
+<status status="PASS" starttime="20210519 18:49:40.757" endtime="20210519 18:50:00.898"/>
+</test>
+<test id="s1-t6" name="Test Cloud Migration Link">
+<kw name="Test CLOUD LINK" library="resource_alex">
+<kw name="Go To Link" library="resource_alex">
+<arg>${PRODUCT LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:50:00.900" level="INFO">Clicking link '//a[contains(text(),'Product')]'.</msg>
+<status status="PASS" starttime="20210519 18:50:00.900" endtime="20210519 18:50:00.950"/>
+</kw>
+<status status="PASS" starttime="20210519 18:50:00.899" endtime="20210519 18:50:00.951"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:50:05.952" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:50:00.951" endtime="20210519 18:50:05.952"/>
+</kw>
+<kw name="Go To Link" library="resource_alex">
+<arg>${CLOUD LINK}</arg>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${LINK}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20210519 18:50:05.954" level="INFO">Clicking link '//a[@href="https://alexsolutions.com.au/product/cloud-migration/"]'.</msg>
+<status status="PASS" starttime="20210519 18:50:05.953" endtime="20210519 18:50:06.015"/>
+</kw>
+<status status="PASS" starttime="20210519 18:50:05.953" endtime="20210519 18:50:06.016"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:50:11.017" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:50:06.016" endtime="20210519 18:50:11.018"/>
+</kw>
+<kw name="Get String" library="resource_alex">
+<var>${STRING}</var>
+<arg>${CLOUD TEXT}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${TEXT}</var>
+<arg>${ELEMENT}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20210519 18:50:11.040" level="INFO">${TEXT} = The Alex Platform is your enterprise’s cloud native centre of data and business truth.</msg>
+<status status="PASS" starttime="20210519 18:50:11.019" endtime="20210519 18:50:11.040"/>
+</kw>
+<msg timestamp="20210519 18:50:11.041" level="INFO">${STRING} = The Alex Platform is your enterprise’s cloud native centre of data and business truth.</msg>
+<status status="PASS" starttime="20210519 18:50:11.018" endtime="20210519 18:50:11.041"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:50:16.041" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:50:11.041" endtime="20210519 18:50:16.042"/>
+</kw>
+<kw name="Assert Text" library="resource_alex">
+<arg>${CLOUD EXPECTED TEXT}</arg>
+<arg>${STRING}</arg>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${TEXT1}</arg>
+<arg>${TEXT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20210519 18:50:16.042" endtime="20210519 18:50:16.043"/>
+</kw>
+<status status="PASS" starttime="20210519 18:50:16.042" endtime="20210519 18:50:16.043"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210519 18:50:21.043" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210519 18:50:16.043" endtime="20210519 18:50:21.044"/>
+</kw>
+<status status="PASS" starttime="20210519 18:50:00.899" endtime="20210519 18:50:21.044"/>
+</kw>
+<status status="PASS" starttime="20210519 18:50:00.898" endtime="20210519 18:50:21.044"/>
+</test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210518 22:36:25.754" endtime="20210518 22:36:25.814"/>
+<status status="PASS" starttime="20210519 18:50:21.045" endtime="20210519 18:50:21.113"/>
 </kw>
-<status status="PASS" starttime="20210518 22:36:04.428" endtime="20210518 22:36:25.815"/>
-</test>
+<kw name="Stop Recording Suite" library="AutoRecorder">
+<arg>A</arg>
+<doc>There is no need to execute this keyword manually.
+Basically - alias for https://mihaiparvu.github.io/ScreenCapLibrary/ScreenCapLibrary.html#Stop%20Video%20Recording</doc>
+<msg timestamp="20210519 18:50:21.176" level="INFO" html="true">&lt;a href="recording_1.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_1.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210519 18:50:21.115" endtime="20210519 18:50:21.176"/>
+</kw>
 <doc>A test suite with Tests to test Alex Homepage
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="PASS" starttime="20210518 22:36:04.319" endtime="20210518 22:36:25.815"/>
+<status status="PASS" starttime="20210519 18:48:06.557" endtime="20210519 18:50:21.114"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Alex Test">Alex Test</stat>
+<stat pass="6" fail="0" skip="0" id="s1" name="A">A</stat>
 </suite>
 </statistics>
 <errors>
